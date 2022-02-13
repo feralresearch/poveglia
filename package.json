@@ -5,8 +5,8 @@
     "version": "3.0.0",
     "license": "GNU General Public License, Version 2",
     "engines": {
-        "ghost": ">=3.0.0",
-        "ghost-api": "v3"
+        "ghost": ">=4.0.0",
+        "ghost-api": "v4"
     },
     "author": {
         "name": "Haunted Themes",
@@ -43,21 +43,21 @@
         "bb >= 10"
     ],
     "devDependencies": {
-        "gscan": "^2.7.0",
-        "gulp": "4.0.2",
+        "gscan": "^4.22.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
         "gulp-concat": "^2.6.1",
-        "gulp-livereload": "4.0.1",
-        "gulp-postcss": "8.0.0",
-        "gulp-sass": "^4.0.1",
-        "gulp-sourcemaps": "^2.6.5",
-        "gulp-uglify": "3.0.2",
-        "gulp-util": "3.0.8",
-        "gulp-watch": "5.0.1",
-        "gulp-autoprefixer": "^7.0.1",
-        "gulp-clean-css": "^4.2.0",
+        "gulp-livereload": "^4.0.2",
         "gulp-minify-css": "^1.2.4",
+        "gulp-postcss": "^9.0.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
         "gulp-strip-css-comments": "^2.0.0",
-        "gulp-zip": "5.0.0"
+        "gulp-uglify": "^3.0.2",
+        "gulp-util": "^3.0.8",
+        "gulp-watch": "^5.0.1",
+        "gulp-zip": "^5.1.0"
     },
     "config": {
         "posts_per_page": 8,
@@ -93,6 +93,7 @@
         "js-cookie": "^2.2.1",
         "moment": "^2.24.0",
         "popper.js": "^1.16.0",
+        "sass": "^1.49.7",
         "share-selected-text": "^1.1.4"
     }
 }

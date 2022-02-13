@@ -4,6 +4,8 @@
 
 jQuery(document).ready(function($) {
 
+
+
     if(typeof changeConfig !== "undefined"){
         config = Object.assign(config, changeConfig);
     }
@@ -155,6 +157,7 @@ jQuery(document).ready(function($) {
             },
         }
     })
+    
 
     function readLater(content, readLaterPosts){
 
@@ -449,7 +452,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#search').on('shown.bs.modal', function () {
-        $('#search-field').focus();
+        $('#search-field').on('focus');
     })
 
     // Initialize Highlight.js
@@ -677,5 +680,7 @@ jQuery(document).ready(function($) {
             },
         },
     });
+
+
 
 });

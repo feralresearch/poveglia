@@ -9,13 +9,13 @@ const zip = require('gulp-zip');
 const uglify = require('gulp-uglify');
 const beeper = require('beeper');
 const fs = require('fs');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const prefix = require('gulp-autoprefixer');
 
 function serve(done) {
-    livereload.listen();
+    livereload.listen({port:35730});
     done();
 }
 

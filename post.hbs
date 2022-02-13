@@ -16,7 +16,6 @@
                                     <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
                                     <div class="tags">{{tags limit="1"}}</div>
                                 </div>
-                                <a href="#" class="read-later" data-id="{{comment_id}}"><i class="far fa-bookmark" data-toggle="tooltip" data-placement="right" title="{{t "Bookmark article"}}"></i><i class="fas fa-bookmark" data-toggle="tooltip" data-placement="right" title="{{t "Remove bookmark"}}"></i></a>
                                 <h1 class="post-title">{{title}}</h1>
                             </div>
                         </div>
@@ -49,14 +48,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <hr>
-                                        <a href="#" class="comments-trigger btn">{{t "Write a comment"}}</a>
-                                        <div class="comments"></div>
-                                        <hr>
-                                    </div>
-                                </div>
+                   
                             </div>
                             <div class="col-lg-4 col-md-12">
                                 <div class="sidebar">
@@ -124,10 +116,6 @@
                                             </div>
                                         {{/if}}
                                     {{/get}}
-                                    <div class="widget">
-                                        <h3 class="mini-title">{{t "Advertise"}}</h3>
-                                        <div class="ads">{{t "Advertise here"}}</div>
-                                    </div>
                                     {{#if @labs.subscribers}}
                                     <div class="widget">
                                         <h3 class="mini-title">{{t "Newsletter"}}</h3>
@@ -136,12 +124,6 @@
                                             input_class="gh-input"
                                             placeholder=(t "Your email address")
                                         }}
-                                    </div>
-                                    {{/if}}
-                                    {{#if @site.twitter}}
-                                    <div class="widget">
-                                        <h3 class="mini-title">{{t "Latest Tweets"}}</h3>
-                                        <div class="tweets" data-twitter="{{@site.twitter}}"></div>
                                     </div>
                                     {{/if}}
                                 </div>
